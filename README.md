@@ -1,4 +1,4 @@
-# accordwebclient
+# shitty
 
 ## Project setup
 ```
