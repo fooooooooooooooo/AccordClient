@@ -9,7 +9,13 @@
   },
   "dependencies": {
     "core-js": "^3.3.2",
-    "vue": "^2.6.10"
+    "font-awesome": "^4.7.0",
+    "material-design-icons": "^3.0.1",
+    "mdi": "^2.2.43",
+    "roboto-fontface": "^0.10.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3",
+    "vuetify": "^2.1.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
