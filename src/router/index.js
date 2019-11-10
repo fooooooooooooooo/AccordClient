@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import login from '../components/Login.vue'
+import register from '../components/Register.vue'
 import home from '../components/Home.vue'
 import App from '../App.vue'
 
@@ -29,6 +30,12 @@ export default new Router({
             path: '/app',
             name: 'App',
             component: App
+        },
+        {
+            path: '/register',
+            name: 'Register',
+            component: register
         }
+
     ]
 })
