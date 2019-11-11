@@ -1,16 +1,35 @@
 <template>
   <v-app id="inspire">
     <v-content>
-      <v-container class="fill-height" fluid>
-        <v-row align="center" justify="center">
-          <v-col cols="12" sm="8" md="4">
+      <v-container
+        class="fill-height"
+        fluid
+      >
+        <v-row
+          align="center"
+          justify="center"
+        >
+          <v-col
+            cols="12"
+            sm="8"
+            md="4"
+          >
             <v-card :raised="true">
-              <v-toolbar color="primary" dark flat>
+              <v-toolbar
+                color="primary"
+                dark
+                flat
+              >
                 <v-toolbar-title>Login</v-toolbar-title>
               </v-toolbar>
               <v-card-text>
                 <v-form>
-                  <v-text-field name="login" hint="Email" :persistent-hint="true" type="email" />
+                  <v-text-field
+                    name="login"
+                    hint="Email"
+                    :persistent-hint="true"
+                    type="email"
+                  />
                   <v-text-field
                     id="password"
                     hint="Password"
@@ -23,10 +42,17 @@
               <v-card-actions>
                 <v-subheader>Need an account?</v-subheader>
                 <v-subheader>
-                  <router-link to="/register">Register.</router-link>
+                  <router-link to="/register">
+                    Register.
+                  </router-link>
+                  <v-subheader>Don't actually, just click login.</v-subheader>
                 </v-subheader>
                 <v-spacer />
-                <v-btn color="primary">Login</v-btn>
+                <v-btn color="Accent">
+                  <router-link to="/client">
+                    Login
+                  </router-link>
+                </v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -38,9 +64,9 @@
 
 <script>
 export default {
+  name: "Login",
   props: {
     source: String
-  },
-  name: "Login"
+  }
 };
 </script>
